@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Yarin's Password Manager</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link th:href="@{index.css}" rel="stylesheet">
+</head>
+<body>
+
+<main>
+    <h2>Welcome to Yarin's Password Manager!</h2>
+
+    <div class="row" style="padding: 50px">
+        <div class="card col-3 offset-2">
+            <div class="card-header">
+                Sign Up
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">No account yet?</h5>
+                <p class="card-text">Sign Up now to use the Password Manager!</p>
+                <a href="/signup" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+
+        <div class="card col-3 offset-2">
+            <div class="card-header">
+                Sign In
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Log in to your account!</h5>
+                <p class="card-text">Got an existing account? Sign in!</p>
+                <a href="/sign_in" class="btn btn-primary">Sign In</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+</body>
+</html>
